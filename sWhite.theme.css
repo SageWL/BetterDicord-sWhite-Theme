@@ -1,0 +1,117 @@
+/**
+* @name sWhite
+* @author sage#007
+* @description i hope u enjoy with it!
+* @version 0.1
+*/
+
+
+/* Eğer kendinize göre şekillendirmek istiyorsanız Aşağıdaki ayarlar kısmından oynamalar yapabilirsiniz. Olabildiğince türkçe olarak açıklamalarını yazdım */
+
+/* Kullanıcı üstüne tıklayınca */
+.headerPlaying-j0WQBV.header-2BwW8b, .headerSpotify-zpWxgT.header-2BwW8b, .headerStreaming-2FjmGz.header-2BwW8b, .headerXbox-3G-4PF.header-2BwW8b { padding-bottom: 30px;}.headerPlaying-j0WQBV.header-2BwW8b:after, .headerSpotify-zpWxgT.header-2BwW8b:after, .headerStreaming-2FjmGz.header-2BwW8b:after, .headerXbox-3G-4PF.header-2BwW8b:after { background: url('https://nyri4.github.io/Comfy/assets/wave.png'); background-size: 250px 20px; animation: animate 6s linear infinite !important; opacity: 1 !important;}.header-2BwW8b:after, .headerPlaying-j0WQBV:before, .headerSpotify-zpWxgT:before, .headerStreaming-2FjmGz:before, .headerXbox-3G-4PF:before { position: absolute;content: "";bottom: -1px;left: 0;width: 250px;height: 20px;z-index: -1;animation: animate2 4s linear infinite;animation-delay: 0s;opacity: 0.5;}.headerPlaying-j0WQBV:before { background: url('https://nyri4.github.io/Comfy/assets/wave_playing.png'); background-size: 250px 20px;}.headerSpotify-zpWxgT:before { background: url('https://nyri4.github.io/Comfy/assets/wave_spotify.png'); background-size: 250px 20px;}.headerStreaming-2FjmGz:before { background: url('https://nyri4.github.io/Comfy/assets/wave_streaming.png'); background-size: 250px 20px;}.headerXbox-3G-4PF:before { background: url('https://nyri4.github.io/Comfy/assets/wave_xbox.png'); background-size: 250px 20px;}@keyframes animate { 0% { background-position-x: 0;} 100% { background-position-x: 250px;}}@keyframes animate2 {0% { background-position-x: 250px; } 100% { background-position-x: 0px;}}
+
+/* No scrollbars */
+::-webkit-scrollbar { display: block !important;}.note-3HfJZ5 { margin-right: 0; }.content-1x5b-n { margin: 0 !important; border-radius: 0; }.mainContent-u_9PKf { padding-left: 8px;}.member-3-YXUe, [id*="private-channels-"] { margin: 0; max-width: unset; }.layout-2DM8Md { border-radius: 0; padding: 0 16px;}.unread-2lAfLh { z-index: 1;}.content-1LAB8Z, .item-1tOPte { margin-right: 8px;}.scroller-2hZ97C { padding-left: 0;}.scroller-2hZ97C > .content-3YMskv, .buttons-3JBrkn, .messagesPopout-24nkyi { padding-right: 10px !important; }.inviteRow-2L02ae {border-radius: 0; padding-left: 15px;}
+
+/* Spotify plugin bar ayarlari ( ELLEME ) */
+.container-6sXIoE { border-bottom: none !important; margin-bottom: 0 !important;}.container-6sXIoE .timeline-UWmgAx { position: relative !important;}.container-6sXIoE .bar-g2ZMIm { position: absolute !important; bottom: -6px !important; left: -8px !important; width: 240px !important; height: 53px !important;margin: 0 !important;-webkit-mask-image: linear-gradient(0.25turn, #0008, #0002) !important;mask-image: linear-gradient(0.25turn, #0008, #0002) !important;border-radius: 0 !important;}.barFill-Dhkah7 { border-radius: 0 !important;}.container-6sXIoE.maximized-vv2Wr0 .bar-g2ZMIm { height: 88px !important;}.container-6sXIoE .button-14-BFJ:hover { background-color: transparent !important;}.barFill-Dhkah7, .timeline-UWmgAx:hover .barFill-Dhkah7 { background: var(--spotify-color) !important;}.inner-WRV6k5 { z-index: 1 !important;}.barText-lmqc5O, .grabber-7sd5f5 { display: none !important;}
+
+:root {
+/* -- Ayarlar -- */
+
+/* Arka plan ( Durum kısımı) */
+--status-background: url('https://imgur.com/ZqdtcjM');
+
+/* Kullanıcı butonu boşluğu */
+--user-buttons-spacing: 3px;
+
+/* Avatar pozisyonu */
+--avatar-left: 327.5px;
+--avatar-bottom: 26.5px;
+
+/* Avatar dairesi */
+--avatar-radius: 50px;  
+
+/* Durum dairesi */
+--status-radius: 5px; 
+
+/* Sunucu avatar dairesi */
+--server-radius: 50px;
+
+/* Avatar genişlik */
+--avatar-width: 130px;
+
+/* Renkli emoji */
+--colored-emoji: grayscale(0%);
+
+/* Etiket rengi */
+--mention-color: #888888a1;
+--unread-color: #e6a568;
+
+/* Etiket rengi sohbet kanalında */
+--mention-color-bar: #C66262;
+--mention-color-background: #c662621f;
+--mention-color-hover: #c6626226;
+
+/* Kullanıcı ayarları (Sustur, Sağırlaştır ve ayarlar) */
+--user-buttons-color: #1b1b1b;
+
+/* Chat buttons color */
+--chat-buttons: #ff0000;
+
+/* Spotify plugini bar */
+--spotify-color: #1bbd54;
+
+/* Durum rengi */
+--online: #21c279;
+--iddle: #faae2c;
+--dnd: #db2222;
+--offline: #6c737c;
+
+/* Rol adlarının yanındaki çerçeve/daire */
+--role-circle: 5px;
+
+/* Araçlar */
+--tooltips: block; /* For the; Enable = set it "block" , Disable = set it "none" */
+
+/* Sol üst discord yazısı */
+--discord-logo: none; /* For the; Enable = set it "block" , Disable = set it "none" */
+
+}
+ 
+.theme-dark { /* KOYU TEMA Renkleri degistirmek icin bu kısımı kullanabilirsin! */
+    --background-tertiary: #0d0e13;
+    --background-secondary: #111116;
+    --background-secondary-alt: #0f0f11;
+    --background-primary: #0d0d0f;
+    --background-mobile-primary: #1e1f25;
+    --background-mobile-secondary: #1c1d25;
+    --channeltextarea-background: #0e0f13;
+    --background-accent: #181818;
+    --background-message-hover: transparent;
+    --background-modifier-hover: #ff8944d0;
+    --background-modifier-active: #a85b2ee5;
+    --background-modifier-selected: #834420e5;
+    --deprecated-card-bg: #ff000063;
+    --background-floating: #101320;
+    --deprecated-quickswitcher-input-background:#101320;
+    --elevation-low: none;
+    --scrollbar-auto-thumb: #111216;
+    --scrollbar-auto-track: #1a1b20;
+    --scrollbar-thin-thumb: #0e1013;
+    --activity-card-background: #08090a;
+}
+ 
+.theme-light { /* AÇIK TEMA Renkleri degistirmek icin bu kısımı kullanabilirsin! */
+    --background-tertiary: #dadadae7;
+    --background-secondary: #d4d4d4cc;
+    --background-secondary-alt: #aaaaaa;
+    --background-primary: #dbdbdbb4;
+    --background-accent: #272727;
+    --background-modifier-hover: #ff8944d0;
+    --background-modifier-active: #a85b2ee5;
+    --header-primary: #131313;
+    --header-secondary: #666666;
+    --text-normal: #131313;
+}
